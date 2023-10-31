@@ -10,7 +10,7 @@ import Campaigns from '@/components/CampaignForm/Campaigns';
 import Information from '@/components/CampaignForm/Information';
 
 const CampaignForm = () => {
-  const [value, setValue] = React.useState('2');
+  const [value, setValue] = React.useState('1');
 
   const handleChange = (event: React.SyntheticEvent, newValue: string) => {
     setValue(newValue);
