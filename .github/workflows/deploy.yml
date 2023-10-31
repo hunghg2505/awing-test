@@ -2,7 +2,8 @@ name: 🔂 Surge PR Preview
 
 on:
   push:
-    - master
+    branches:
+      - master
 
 jobs:
   preview:
