@@ -1,0 +1,24 @@
+name: 🔂 Surge PR Preview
+
+on:
+  push:
+    - master
+
+jobs:
+  preview:
+    runs-on: ubuntu-latest
+    permissions:
+      pull-requests: write # allow surge-preview to create/update PR comments
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 18.x
+      - uses: hunghg255/surge-preview@master
+        with:
+          surge_token: ${{ secrets.SURGE_TOKEN }}
+          dist: dist
+          teardown: true
+          build: |
+            npm install
+            npm run build
