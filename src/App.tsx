@@ -1,14 +1,21 @@
-import CampaignForm from '@/components/CampaignForm/CampaignForm';
-import { StoreLayout } from '@/store/campaign';
+import { RouterProvider, createBrowserRouter } from 'react-router-dom';
+
+import Demo from '@/pages/Demo';
+import Home from '@/pages/Home';
+
+const router = createBrowserRouter([
+  {
+    path: '/',
+    element: <Home />,
+  },
+  {
+    path: '/demo',
+    element: <Demo />,
+  },
+]);
 
 function App() {
-  return (
-    <div className='App'>
-      <StoreLayout>
-        <CampaignForm />
-      </StoreLayout>
-    </div>
-  );
+  return <RouterProvider router={router} />;
 }
 
 export default App;

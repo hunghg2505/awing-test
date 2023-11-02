@@ -1,0 +1,76 @@
+.App {
+  text-align: center;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.menu ul {
+  background: #4e4e4e;
+  margin: 0;
+}
+
+.menu li {
+  color: #f1f1f1;
+  display: inline-block;
+  height: 40px;
+  line-height: 40px;
+  margin-left: -5px;
+  width: 120px;
+}
+
+.menu a {
+  color: #fff;
+  display: block;
+  text-decoration: none;
+}
+
+.menu a:hover {
+  background: #f1f1f1;
+  color: #333;
+}
+
+.activeClass {
+  background: #615a5a;
+}
+
+.requirement {
+  margin: 0 auto;
+  padding-top: 20px;
+  text-align: left;
+  width: 1000px;
+}
+
+.requirement h1 {
+  text-align: center;
+}
+
+.requirement .label-level-1 {
+  margin-left: 15px;
+}
+
+.requirement .label-level-2 {
+  margin-left: 45px;
+}
+
+.requirement .label-level-3 {
+  margin-left: 75px;
+}
+
+.requirement .label-level-4 {
+  margin-left: 115px;
+}
+
+.requirement .label-level-5 {
+  margin-left: 145px;
+}
+
+.requirement .label-level-6 {
+  margin-left: 175px;
+}
